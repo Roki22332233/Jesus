@@ -1,0 +1,196 @@
+*{
+
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Zen Kurenaido', sans-serif;
+    color: antiquewhite;
+
+}
+
+body{
+      
+    background-color: black;
+
+}
+
+.main{
+
+    padding: 0%;
+    margin: 0%;
+    position: relative;
+
+}
+
+.logo{
+
+    background-color: rgb(12, 106, 182);
+    width: 20vw;
+    display: block;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+
+}
+
+aside{
+
+    background-color: rgb(12, 106, 182);
+    box-shadow: .005em .005em black, .025em .025em rgba(0, 0, 0, 0.747), .035em 0.035em rgba(0, 0, 0, 0.563), 0.45em 0.45em rgba(0, 0, 0, 0.63) ;
+    min-width: fit-content;
+    width: 20vw;
+    position: fixed;
+    height: 100vh;
+    z-index: 22;
+
+}
+
+aside .logo i{
+
+
+    font-size: 2vw;
+
+}
+
+aside .logo span{
+
+    font-size: 2.5vw;
+    font-style: oblique;
+
+}
+
+aside .buttons {
+
+    padding-top: 10%;
+    display: block;
+    z-index: 22;
+    
+}
+
+aside .buttons button{
+
+    display: block;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-style: oblique;
+    border-radius: 12px;
+    font-size: 2vw;
+    width: 18vw;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    font-weight: 600;
+
+    border: 5px solid black;
+    border-radius:0 1rem 0 1rem;
+    transition: 0.2s;
+    
+}
+
+
+/* Buttons Colors */
+
+.jedan:hover{
+
+    background-color: greenyellow;
+    transition: 0.2s;
+
+    cursor: pointer;
+
+}
+
+.dva:hover{
+
+    background-color: gold;
+    transition: 0.2s;
+
+    cursor: pointer;
+
+}
+
+.tri:hover{
+
+    background-color: goldenrod;
+    transition: 0.2s;
+
+    cursor: pointer;
+
+}
+
+.cetri:hover{
+
+    background-color: rgb(207, 57, 57);
+    transition: 0.2s;
+
+    cursor: pointer;
+
+}
+
+.pet:hover{
+
+    background-color: purple;
+    transition: 0.2s;
+
+    cursor: pointer;
+
+}
+
+.sest:hover{
+
+    background-color: blue;
+    transition: 0.2s;
+
+    cursor: pointer;
+
+}
+
+/* ------------------------------ */
+
+.footer{
+
+    position: absolute;
+    padding-top: 17%;
+    padding-left: 25%;
+
+}
+
+.ps5{
+    z-index: 10;
+    margin: 0%;
+    padding: 0%;
+    display: block;
+    background: url("../JPG/PS5.jpg");
+    background-size: 100%;
+    width: auto;
+    height: 47.6vw;
+
+}
+
+.gaybox{
+
+    background: url("../JPG/Gaybox.jpeg");
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 50vw;
+
+}
+
+.nitendo{
+
+    background: url("../JPG/Nitendo.jpg");
+    background-size: 110%;
+    margin: 0%;
+    padding: 0%;
+    display: block;
+    width: auto;
+    height: 47.6vw;
+
+}
+
+span{
+
+    font-size: 2vw;
+
+}
+
