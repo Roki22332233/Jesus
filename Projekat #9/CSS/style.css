@@ -3,20 +3,23 @@
     padding: 0%;
     margin: 0%;
     color: antiquewhite;
-
 }
-
 body{
     text-decoration: none;
     background-color: black;
 }
-
+.footer p {
+    font-size: small; padding-right: 15%; border-top: 2px solid #000;
+}
+.footer hr {
+    position: relative;
+    right: 70px;
+    bottom: 0px;
+}
 ::-webkit-scrollbar{
-    
     width: 0.5vw;
     transition: 500ms;
     background-color: rgb(168, 168, 168);
-
 }
 
 ::-webkit-scrollbar:hover{

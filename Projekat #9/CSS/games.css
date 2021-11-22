@@ -27,6 +27,7 @@ main{
     --sm-text:1.2vw;
     --future-font: 'Nova Mono', monospace;
     --street-font: 'comforter brush', cursive ;
+    --rdr2-font: cursive ;
     --serious-font: 'pt serif', serif;
     --price-font: 'oswald', serif;
     --fifa-font: 'oswald', serif;
@@ -54,12 +55,13 @@ main{
 }
 .game-info{
     font-size: var(--sm-text);
+    flex:1;
+    padding: 1vh 2vw;
 }
 .game-info-container{
     display: flex;
     background: linear-gradient(-10deg, rgba(255, 3, 66, 0.856),rgba(81, 3, 227, 0.807));
     border-radius: 2rem;
-    padding: 1vh 2vw;
     font-family:var(--future-font);
 }
 .game-cover{
@@ -69,18 +71,19 @@ main{
     border-radius: 1rem;
     position: absolute;
     right: 15%;
+    bottom: 5%;
 }
 
 .game-title{
     font-weight: 700;
     font-style: oblique;
     text-shadow: .05em .05em rgba(3, 244, 244, 0.801);
+    border-bottom: 1px solid rgba(3, 244, 244, 0.801);
 }
 .game-desc{
     color: rgb(3, 244, 244);
-    padding-top: 5%;
-    font-size: small;
-    border-top: 1px solid;
+    padding-top: 2%;
+    font-size: medium;
     font-family: var(--desc-font);
 }
 /*I set one price style for every game, so change accordingly! :) */
@@ -100,9 +103,6 @@ transition: all 300ms ease;
     color: #ffffff00;
     content: "Buy";
     text-shadow: .19em .19em green;
-}
-.game-price::after{
-
 }
 /*.game-buy-btn{
     max-width: fit-content;
@@ -164,6 +164,7 @@ transition: all 300ms ease;
     border-radius: 1rem;
     position: absolute;
     right: 15%;
+    bottom: 2%;
     background-color: #323131;
 }
 
@@ -171,13 +172,13 @@ transition: all 300ms ease;
     font-family: var(--callofduty-font);
     text-shadow: .1em .1em #000;
     color: #f2f2f2;
+    border-bottom: 2px solid #fcfcfc8a;
 }
 .game-desc-2{
     color: #cbcbcb;
     text-shadow: .05em .05em #000;
     padding-top: 2%;
-    font-size: small;
-    border-top: 1px solid;
+    font-size: medium;
     width: fit-content;
     font-family: var(--desc-font);
 }
@@ -200,7 +201,6 @@ transition: all 300ms ease;
     border: none;
     height: 25vw;
     padding-top: 1vh;
-    border: 5px solid black;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
 }
 .game-3d-character-3{
@@ -230,24 +230,166 @@ transition: all 300ms ease;
     border-radius: 1rem;
     position: absolute;
     right: 15%;
+    bottom: 2%;
     background-color: #323131;
 }
 
 .game-title-3{
-    text-shadow: .05em .05em rgb(249, 225, 5);
-    color: #000;
+    text-shadow: .05em .05em #000;
+    color: #fff;
     font-family: var(--fifa-font);
+    border-bottom: 2px solid rgb(249, 225, 5);
 }
 .game-desc-3{
     color: #e2e1dc;
     text-shadow: .10em .10em #000;
     font-size: small;
     padding-top: 2%;
-    border-top: 2px solid rgb(249, 225, 5);
     width: fit-content;
     font-family: var(--desc-font);
 }
 .game-images-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+/*RDR2*/
+.game-container-4{
+    background:linear-gradient(120deg, rgb(21, 73, 217),rgba(113, 113, 14, 0.985),rgba(0, 0, 0, 0.608));
+    position: relative;
+    margin: 0;
+    padding: 5% 5% 5% 15%;
+    height: 50vw;
+    overflow: hidden;
+}
+
+.game-wallpaper-4{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    height: 25vw;
+    padding-top: 1vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+}
+.game-3d-character-4{
+    object-position: center;
+    height: 5vw;
+    position: absolute;
+    right: 13vh;
+    top:26vw;
+}
+.game-info-4{
+    font-size: var(--sm-text);
+    flex: 1;
+    
+}
+.game-info-container-4{
+    display: flex;
+    background: linear-gradient(10deg, rgb(0, 0, 0),rgba(246, 6, 6, 0.827),rgb(236, 154, 3));
+    border-radius: 2rem;
+    padding: 1vh 2vw;
+    margin-top: 3vh;
+    font-family: var(--serious-font);
+    
+}
+.game-cover-4{
+    max-width: 15vw;
+    box-shadow: rgba(0, 0, 0, 0.807) 15px 10px 40px 3px,#000 -15px 0 150px 3px;
+    border-radius: 1rem;
+    position: absolute;
+    right: 15%;
+    bottom: 1%;
+    background-color: #323131;
+}
+
+.game-title-4{
+    padding-top: 2%;
+    border-bottom: 2px solid rgba(19, 19, 19, 0.207);
+}
+.game-desc-4{
+    color: #e2e1dc;
+    text-shadow: .10em .10em rgba(0, 0, 0, 0.021);
+    font-size: medium;
+    padding-top: 2%;
+    width: fit-content;
+    font-family: var(--desc-font);
+}
+.game-images-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+/*RDR2*/
+.game-container-4{
+    background:linear-gradient(120deg, rgb(21, 73, 217),rgba(113, 113, 14, 0.985),rgba(0, 0, 0, 0.608));
+    position: relative;
+    margin: 0;
+    padding: 5% 5% 5% 15%;
+    height: 50vw;
+    overflow: hidden;
+}
+
+.game-wallpaper-4{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    height: 25vw;
+    padding-top: 1vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+}
+.game-3d-character-4{
+    object-position: center;
+    height: 5vw;
+    position: absolute;
+    right: 13vh;
+    top:26vw;
+}
+.game-info-4{
+    font-size: var(--sm-text);
+    flex: 1;
+    
+}
+.game-info-container-4{
+    display: flex;
+    background: linear-gradient(10deg, rgb(0, 0, 0),rgba(246, 6, 6, 0.827),rgb(236, 154, 3));
+    border-radius: 2rem;
+    padding: 1vh 2vw;
+    margin-top: 3vh;
+    font-family: var(--serious-font);
+    
+}
+.game-cover-5{
+    max-width: 15vw;
+    box-shadow: rgba(0, 0, 0, 0.807) 15px 10px 40px 3px,rgba(0, 0, 0, 0.807) -10px 10px 20px 3px;
+    border-radius: 1rem;
+    position: absolute;
+    right: 15%;
+    bottom: 1%;
+    background-color: #323131;
+}
+
+.game-title-5{
+    padding-top: 2%;
+    border-bottom: 2px solid rgba(249, 94, 5, 0.676);
+}
+.game-desc-5{
+    color: #e2e1dc;
+    text-shadow: .10em .10em #000;
+    font-size: medium;
+    padding-top: 2%;
+    width: fit-content;
+    font-family: var(--desc-font);
+}
+.game-images-4{
     display: flex;
     align-items: center;
     justify-content: center;
