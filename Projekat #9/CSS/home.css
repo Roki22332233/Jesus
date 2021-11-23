@@ -1,7 +1,81 @@
-body {
-
-    background-color: white;
-    width: auto;
-    height: 100vh;
-
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Nova+Mono&family=Oswald&family=PT+Serif&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
 }
+main {
+    margin: 0 0 0 20%;
+    
+}
+
+:root{
+    --sm-text:1.2vw;
+    --future-font: 'Nova Mono', monospace;
+    --street-font: 'comforter brush', cursive ;
+    --rdr2-font: cursive ;
+    --serious-font: 'pt serif', serif;
+    --price-font: 'oswald', serif;
+    --fifa-font: 'oswald', serif;
+    --callofduty-font: 'oswald', serif;
+    --desc-font: 'oswald', serif;
+}
+
+.main-container{
+    background: url("https://www.publicdomainpictures.net/pictures/330000/nahled/sky-blue-rough-texture-background.jpg");
+    background-size: 26%;
+    background-repeat: repeat;
+    height: 100vh;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+}
+.main-wallpaper{
+}
+.main-slogan{ 
+    border-bottom: 10px solid rgba(224, 224, 224, 0.834);
+    padding: 1vh 1vw 0 1vw;
+    background-color: rgba(240, 248, 255, 0.493);
+}
+.main-text{
+    color: #000;
+    padding: 1vw;
+    background-color: rgba(255, 0, 0, 0.745);
+    padding-top: 2%;
+    font-family: var(--future-font);
+}
+.main-container-1{
+    background: url("https://previews.123rf.com/images/mon5ter/mon5ter1505/mon5ter150500001/39612052-seamless-pattern-computer-circuit-board-.jpg");
+    background-size: 25%;
+    background-repeat: repeat;
+    height: 100vh;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+}
+.main-slogan-1{
+    border-bottom: 10px solid rgba(11, 229, 138, 0.834);
+    padding: 1vh 1vw 0 1vw;
+    background-color: rgba(14, 159, 159, 0.779);
+}
+.main-text-1{
+    color: #000;
+    padding: 1vw;
+    background-color: rgba(255, 0, 0, 0.745);
+    padding-top: 2%;
+    font-family: var(--future-font);
+}
+.main-text-1{
+    color: #000;
+    padding: 1vw;
+    background-color: rgba(153, 255, 0, 0.745);
+    padding-top: 2%;
+    font-family: var(--future-font);
