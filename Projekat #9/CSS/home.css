@@ -8,7 +8,6 @@ main {
     margin: 0 0 0 20%;
     
 }
-
 :root{
     --sm-text:1.2vw;
     --future-font: 'Nova Mono', monospace;
@@ -20,10 +19,9 @@ main {
     --callofduty-font: 'oswald', serif;
     --desc-font: 'oswald', serif;
 }
-
 .main-container{
     background: url("https://www.publicdomainpictures.net/pictures/330000/nahled/sky-blue-rough-texture-background.jpg");
-    background-size: 26%;
+    background-size: 30%;
     background-repeat: repeat;
     height: 100vh;
     padding: 0;
@@ -32,7 +30,6 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 50vh;
 }
 .main-wallpaper{
 }
@@ -40,17 +37,24 @@ main {
     border-bottom: 10px solid rgba(224, 224, 224, 0.834);
     padding: 1vh 1vw 0 1vw;
     background-color: rgba(240, 248, 255, 0.493);
+    z-index: 9;
 }
 .main-text{
-    color: #000;
+    color: #f2f2f2;
     padding: 1vw;
-    background-color: rgba(255, 0, 0, 0.745);
+    background-color: rgb(193, 4, 4);
     padding-top: 2%;
     font-family: var(--future-font);
+    border-radius: 0 0 1.5em 1.5em;
+    z-index: 0;
+    position: absolute;
+    margin-top: 13.5vh;
+    animation-name: hideSlide;
+    transition: all 5s ease;
 }
 .main-container-1{
     background: url("https://previews.123rf.com/images/mon5ter/mon5ter1505/mon5ter150500001/39612052-seamless-pattern-computer-circuit-board-.jpg");
-    background-size: 25%;
+    background-size: 30%;
     background-repeat: repeat;
     height: 100vh;
     padding: 0;
@@ -59,23 +63,94 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 50vh;
 }
 .main-slogan-1{
     border-bottom: 10px solid rgba(11, 229, 138, 0.834);
     padding: 1vh 1vw 0 1vw;
     background-color: rgba(14, 159, 159, 0.779);
+    z-index: 9;
 }
 .main-text-1{
-    color: #000;
+    color: rgb(68, 255, 0);
+    text-shadow: .05em .05em rgb(255, 200, 1);
     padding: 1vw;
-    background-color: rgba(255, 0, 0, 0.745);
+    background-color: rgb(76, 124, 5);
     padding-top: 2%;
     font-family: var(--future-font);
+    border-radius: 0 0 1.5em 1.5em;
+    z-index: 0;
+    position: absolute;
+    margin-top: 13.5vh;
+    opacity: 0;
+    
 }
-.main-text-1{
-    color: #000;
+.main-container-2{
+    background: url("https://cdn.pixabay.com/photo/2015/10/24/19/42/pattern-1004855__480.jpg");
+    background-size: 5%;
+    background-repeat: repeat;
+    height: 100vh;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-slogan-2{
+    border-bottom: 10px solid rgb(205, 197, 42);
+    padding: 1vh 1vw 0 1vw;
+    background-color: rgba(195, 195, 195, 0.836);
+    z-index: 9;
+}
+.main-text-2{
+    color: rgb(0, 85, 255);
+    text-shadow: .05em .05em rgb(156, 124, 7);
     padding: 1vw;
-    background-color: rgba(153, 255, 0, 0.745);
+    background-color: rgba(201, 203, 201, 0.848);
     padding-top: 2%;
     font-family: var(--future-font);
+    border-radius: 0 0 1.5em 1.5em;
+    z-index: 0;
+    position: absolute;
+    margin-top: 13.5vh;    
+    opacity: 0;
+}
+
+.animation{
+
+    
+    animation: hideSlide 900ms ease;
+    animation-fill-mode: forwards;
+
+}
+.animation1{
+
+    animation: hideSlide 900ms ease;
+    animation-fill-mode: forwards;
+
+}
+
+
+@keyframes hideSlide {
+    0%{
+        margin-bottom: 14vh;
+        opacity: 0;
+    }
+    100%{
+        margin-bottom: 0;
+        opacity: 1;
+    }
+}
+
+
+
+.main-container-1:hover, .main-container-2:hover{
+    box-shadow: 10px 0 10vh 30px rgba(0, 0, 0, 0.397), -10px 0 5vh 30px #000;
+    border-radius: 30vw 30vw 0 0;
+    transition: all 800ms ease;
+}
+.main-container:hover{
+    box-shadow: -10px 0 10vh 30px rgba(0, 0, 0, 0.747), 0 -10px 5vh 30px #000;
+    border-radius: 0 0 30vw 30vw ;
+    transition: all 800ms ease;
+}
